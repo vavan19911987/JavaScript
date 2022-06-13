@@ -1,42 +1,109 @@
 'use strict';
 
-/* Задание на урок:
-1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
-'Сколько фильмов вы уже посмотрели?'
-2) Создать объект personalMovieDB и в него поместить такие свойства:
-    - count - сюда передается ответ на первый вопрос
-    - movies - в это свойство поместить пустой объект
-    - actors - тоже поместить пустой объект
-    - genres - сюда поместить пустой массив
-    - privat - в это свойство поместить boolean(логическое) значение false
-3) Задайте пользователю по два раза вопросы:
-    - 'Один из последних просмотренных фильмов?'
-    - 'На сколько оцените его?'
-Ответы стоит поместить в отдельные переменные
-Записать ответы в объект movies в формате: 
-    movies: {
-        'logan': '8.1'
-    }
-Проверить, чтобы все работало без ошибок в консоли */
+
+// const checkbox = document.querySelector('input');
+// const para = document.querySelector('p');
+
+// let shoppingDone = false;
+
+// checkbox.addEventListener('change', () => {
+//     checkbox.disabled = true;
+//     shoppingDone = true;
+//     updateAllowance();
+
+// });
+
+// function updateAllowance() {
+//     let childsAllowance;
+
+//     if (shoppingDone === true) {
+//         childsAllowance = 10;
+//     } else {
+//         childsAllowance = 5;
+//     }
+
+//     para.textContent = `На этой неделе   \$${childsAllowance} получит ребенок.`;
+// }
+
+// let select = document.querySelector('select');
+// let html = document.querySelector('.output');
+
+// select.onchange = function () {
+//     let choice = select.value;
+
+//     switch (choice) {
+//         case 'black':
+//             update('black', 'white');
+
+//             break;
+//         case 'white':
+//             update('white', 'black');
+//             break;
+
+//         default:
+//             break;
+//     }
+// };
+
+// function update(bgColor, textColor) {
+//     html.style.backgroundColor = bgColor;
+//     html.style.color = textColor;
+// }
 
 
 
-let personalMoviDB = {
-    count: {},
-    movies: {},
-    actors: {},
-    genris: [],
-    privat: false
-};
+// console.log( NaN || 2 || undefined );
 
-let numberOfilms = +prompt("Сколько фильмов вы уже посмотрели", ''),
-    a = prompt("Один из последних просмотренных фильмов?", ''),
-    b = prompt("На сколько оцените его?", ''),
-    c = prompt("Один из последних просмотренных фильмов?", ''),
-    d = prompt("На сколько оцените его?", '');
+// console.log( NaN && 2 && undefined );
 
-personalMoviDB.movies[a] = b;  // используем синтаксис через точку так юраужер записывает правильно
-personalMoviDB.movies[c] = d;
-personalMoviDB.count = numberOfilms;
+// console.log( 1 && 2 && 3 );
 
-console.log(personalMoviDB);
+// console.log( !1 && 2 || !3 );
+
+// console.log( 25 || null && !3 );
+
+// console.log( NaN || null || !3 || undefined || 5);
+
+// console.log( NaN || null && !3 && undefined || 5);
+
+// console.log( 5 === 5 && 3 > 1 || 5);
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger === 3 && cola || fries === 3 && nuggets) {
+//    console.log('Done!');
+// }
+
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger || cola || fries === 3 || nuggets) {
+//    console.log('Done!');
+// }
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!');
+// } else {
+//     console.log('Error');
+// }
+
+
+// alert( null || 2 || undefined );
+
+// alert( alert(1) || 2 || alert(3) );
+
+// let age;
+
+// age > 14 && < 90;
+
