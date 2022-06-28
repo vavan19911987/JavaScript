@@ -107,137 +107,222 @@
 
 // age > 14 && < 90;
 
+// let num = 50;
 
+// while (num <= 55) {
+//    console.log(num);
+//    num++;
+// }
 
+// do {
+//    console.log(num);
+//    num++;
+// } 
 
-// let input = document.querySelector('.input');
-// let btn = document.querySelector('.btn');
-// let text = document.querySelector('.text');
+// while (num < 55);
 
+// let num = 50;
 
-// btn.addEventListener('click', function () {
+// for (let i = 1; i < 10; i++) {
 
-//    let price = 150;
-//    let agg = input.value;
+//    if (i === 6) {
+//       // break;
+//       continue;
+//    }
+//    console.log(i);
+// }
 
-//    // Если возраст меньше 13 лет то билет бесплатный
+// let result = '';
+// const lines = 7;
 
-//    if (agg < 13) {
-//       price = 'Ваш билет бесплатный';
-//    } else if (agg < 20) { // Если возраст меньше 20 лет цена == -20%
-//       price = price * 0.8;
-//    } else { // Если возраст больше 20 то цена на билет равна 100%
-//       price = price;
+// for(let i = 1; i < lines; i++) {
+
+//    for(let j = 0; j < i; j++) {
+//       result += '*';
 //    }
 
+//    result += '\n';
+// }
 
-//    text.innerHTML = `Ваша цена билета --- ${price} (рублей)`;
-// });
-
-
-// let red = document.querySelector('.red'),
-//    yellow = document.querySelector('.yellow'),
-//    green = document.querySelector('.green');
-
-// let redActive = document.querySelector('.redActive'),
-//    yellowActive = document.querySelector('.yellowActive'),
-//    greenActive = document.querySelector('.greenActive');
-// let car = document.querySelector('.car');
+// console.log(result);
 
 
-
-// red.addEventListener('click', function () {
-//    redActive.style.background = 'red';
-//    yellowActive.style.background = 'none';
-//    greenActive.style.background = 'none';
-
-//    if (redActive.style.background == 'red') {
-//       car.style.animationDuration = '0s';
+// first: for (let i = 0; i < 3; i++) {
+//    console.log(`First level: ${i}`);
+//    for (let j = 0; j < 3; j++) {
+//       console.log(`Second level: ${j}`);
+//       for (let k = 0; k < 3; k++) {
+//          if (k === 2) {
+//             continue first;
+//          }
+//          console.log(`Third levej: ${k}`);
+//       }
 //    }
-// });
+// }
 
-// yellow.addEventListener('click', function () {
-//    yellowActive.style.background = 'yellow';
-//    redActive.style.background = 'none';
-//    greenActive.style.background = 'none';
 
-//    if (yellowActive.style.background == 'yellow') {
-//       car.style.animationDuration = '10s';
+// function firstTask() {
+//    // Пишем решение вот тут
+//    let num = 5;
+//    while ( num <= 10) {
+//        console.log(num);
+//        num++;
 //    }
-// });
 
-// green.addEventListener('click', function () {
-//    greenActive.style.background = 'green';
-//    yellowActive.style.background = 'none';
-//    redActive.style.background = 'none';
+// }
+// firstTask();
 
-//    if (greenActive.style.background == 'green') {
-//       car.style.animationDuration = '1s';
+// function secondTask() {
+//    // Пишем решение вот тут
+//    for (let i = 20; i >= 10; i--) {
+
+
+
+//        if (i === 13) {
+//          break;
+//        }
+//        console.log(i);
 //    }
-// });
+// }
 
-let tex1 = document.querySelector('.text1'),
-   tex2 = document.querySelector('.text2'),
-   tex3 = document.querySelector('.text3'),
-   tex4 = document.querySelector('.text4');
-
-let btn1 = document.querySelector('.btn1'),
-   btn2 = document.querySelector('.btn2'),
-   btn3 = document.querySelector('.btn3'),
-   btn4 = document.querySelector('.btn4');
-
-let p1 = document.querySelector('.p1'),
-   p2 = document.querySelector('.p2'),
-   p3 = document.querySelector('.p3'),
-   p4 = document.querySelector('.p4');
+// secondTask();
 
 
+// function thirdTask() {
+//    // Пишем решение вот ту
+//    for (let i = 2; i <= 10; i++) {
 
-btn1.addEventListener('click', function () {
-   let name = tex1.value;
+//       if (i % 2 === 0) {
+//          console.log(i);
 
-   if (/[\d.,:]/.test(name)) {
-      p1.innerHTML = `Неверный формат ввода`;
-   } else if (!/^[а-яs]+$/i.test(name)) {
-      p1.innerHTML = name;
-   } else if (/^[а-яs]+$/i.test(name)) {
-      p1.innerHTML = `Введите на Английском`;
-   }
-});
+//       }
 
-btn2.addEventListener('click', function () {
-   let name = tex2.value;
-
-   if (/[\d.,:]/.test(name)) {
-      p2.innerHTML = name;
-   } else if (!/^[а-яs]+$/i.test(name)) {
-      p2.innerHTML = `Введите значение в цифровом формате`;
-   } else if (/^[а-яs]+$/i.test(name)) {
-      p2.innerHTML = `Введите значение в цифровом формате`;
-   }
-});
-
-btn3.addEventListener('click', function () {
-   let name = tex3.value;
-   let sum = 90;
-
-   if (name == sum) {
-      p3.innerHTML = name;
-   } else if (name !== sum) {
-      p3.innerHTML = `Знвчение не верно`;
-   }
-});
-
-btn4.addEventListener('click', function () {
-   let name = tex4.value;
-
-   if (/[\d.,:]/.test(name)) {
-      p2.innerHTML = name;
-   } else if (!/^[а-яs]+$/i.test(name)) {
-      p2.innerHTML = `Введите значение в цифровом формате`;
-   } else if (/^[а-яs]+$/i.test(name)) {
-      p2.innerHTML = `Введите значение в цифровом формате`;
-   }
-});
+//    }
+// }
+// thirdTask();
 
 
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// function fourthTask() {
+//    let i = 2;
+
+//    while (i <= 16) {
+//        if (i % 2 === 0) {
+//            i++;
+//            continue;
+//        } else {
+//            console.log(i);
+//        }
+//        i++;
+//    }
+// }
+
+// fourthTask();
+
+
+// function fifthTask() {
+//    const arrayOfNumbers = [];
+
+//    for (let i = 5; i < 11; i++) {
+//        arrayOfNumbers[i - 5] = i;
+//    }
+
+//    console.log(arrayOfNumbers);
+//    return arrayOfNumbers;
+// }
+
+// fifthTask();
+
+// for (let num = 0; num < 5; num++) {
+//    if (num == 2 || num == 1) {
+//       continue;
+//    }
+//    console.log(num);
+// }
+
+
+// function firstTask() {
+//    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//    const arr = [3, 5, 8, 16, 20, 23, 50];
+//    const result = [];
+
+//    // Пишем решение вот тут
+
+//    result[0] = arr[0];
+//    result[1] = arr[1];
+//    result[2] = arr[2];
+//    result[3] = arr[3];
+//    result[4] = arr[4];
+//    result[5] = arr[5];
+//    result[6] = arr[6];
+
+//    // Не трогаем
+//    return result;
+
+// }
+// firstTask();
+
+// function secondTask() {
+//    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//    const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+//    // Пишем решение вот тут
+//    data[0] = 10;
+//    data[1] = 20;
+//    data[2] = 'shopping - done';
+//    data[3] = 40;
+//    data[4] = 'Homework - done';
+
+//    console.log(data);
+
+//    // Не трогаем
+//    return data;
+// }
+// secondTask();
+
+// function thirdTask() {
+//    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//    const data = [5, 10, 'Shopping', 20, 'Homework'];
+//    const result = [];
+
+//    // Пишем решение вот тут
+//    for (let i = 1; i <= data.length; i++) {
+//       result[i - 1] = data[data.length - i];
+//   }
+
+//   console.log(result);
+
+//    // Не трогаем
+//    return result;
+// }
+
+// thirdTask();
+
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+// ***********
+const lines = 5;
+let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+
+//    for (let j = 0; j < lines - i; j++) {
+//       result += " ";
+//    }
+//    for (let j = 0; j < 2 * i + 1; j++) {
+//       result += "*";
+//    }
+
+//    result += '\n';
+// }
+// console.log(result);
